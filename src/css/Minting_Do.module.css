@@ -1,0 +1,292 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    scroll-behavior: smooth;
+}
+
+/*------------- MINTING PAGE ,where magic happens-------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 35px;
+    padding: 1em;
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+.Clickme{
+    color: gold;
+}
+.Clickme:hover{
+    color: #301934;
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+}
+.PreviewDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    row-gap: 10px;
+
+    border-radius: 10px;
+    background-color: #220b25;
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+img:nth-child(4) {
+    flex-basis: 100%;
+}
+.Img{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    
+}
+
+.TraitDiv{
+    position: relative;
+    width: 90%;
+    height: 22em;
+    margin-left: 5%;
+    background-color: #220b25;
+    border-radius: 10px;
+}
+.Trait{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    
+    margin-left: 25%;
+    
+    z-index: 5;
+    background-position: center;
+    animation: berry 4s infinite alternate;
+    
+}
+.Trait2{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin-left: 25%;
+    
+    z-index: 1;
+    background-position: center;
+    animation: chbg 8s infinite alternate;
+    
+}
+.Trait3{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin-left: 25%;
+    
+    z-index: 6;
+    background-position: center;
+    
+    animation: slide1 5s ease-in-out infinite;
+}
+.Trait4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 7;
+}
+.Trait6{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin-left: 25%;
+    
+    z-index: 190;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/nftPreview/goggles.png");
+    animation: slide1 5s ease-in-out infinite;
+}
+.Trait7{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    margin-left: 25%;
+    
+    z-index: 190;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/nftPreview/saber.png");
+    animation: slide1 5s ease-in-out infinite;
+    
+}
+/*
+.ImgTrait{
+    width: auto;
+    height: 22em;
+    position: absolute;
+    top: auto;
+    left: 25%;
+}
+.ImgTrait{
+    width: 48%;
+    height: 20em;
+    position: absolute;
+    top: auto;
+    left: 25%;
+    animation: berry 4s infinite alternate;
+}*/
+
+.ImgTrait{
+   
+    width: 15em;
+    height: 15em;
+    margin-right: 2em;
+   
+}
+.ImgTrait2{
+   
+    width: 5em;
+    height: 5em;
+    margin-right: 2em;
+   
+}
+@keyframes berry {
+    0% {
+        background-image:url("../assets/nftPreview/black.png");
+        background-size: cover;
+        
+        background-repeat: no-repeat;
+    }
+    20% {
+        background-image:url("../assets/nftPreview/blue.png");
+    background-size:cover
+    }
+    40% {
+        background-image:url("../assets/nftPreview/green_emerald.png");
+    background-size:cover
+    }
+    60% {
+        background-image:url("../assets/nftPreview/white_extra.png");
+    background-size:cover
+    }
+    80% {
+        background-image:url("../assets/nftPreview/red.png");
+    background-size:cover
+    }
+    100% {
+        background-image:url("../assets/nftPreview/yellow.png");
+    background-size:cover
+    }
+}
+.Img2{
+    width: auto;
+    height: 22em;
+    position: absolute;
+    top: auto;
+    left: 25%;
+}
+.Img3{
+    
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100vh;
+    height: 22em;
+    min-width: 100vh;
+}
+.BG{
+    width: 50%;
+    height: 22em;
+    position: absolute;
+    top: auto;
+    left: 25%;
+    animation: chbg 6s infinite alternate;
+    }
+    @keyframes chbg {
+        0% {
+            background-image:url("../assets/nftPreview/mountain.png");
+        background-size:cover
+        }
+        20% {
+            background-image:url("../assets/nftPreview/road.png");
+        background-size:cover
+        }
+        40% {
+            background-image:url("../assets/nftPreview/forest.png");
+        background-size:cover
+        }
+        60% {
+            background-image:url("../assets/nftPreview/brownBG.png");
+        background-size:cover
+        }
+        80% {
+            background-image:url("../assets/nftPreview/PurpleBG.png");
+        background-size:cover
+        }
+        100% {
+            background-image:url("../assets/nftPreview/greenBG.png");
+        background-size:cover
+        }
+    }
+.TraitAnimation{
+    background-color: transparent;
+    position: absolute;
+    width: 50%;
+    margin-left: 25%;
+    height: 100%;
+    top: 0;
+    max-width: 700px;
+    z-index: 6;
+    background-position: center;
+    
+    opacity: 1;
+    animation: slide1 5s ease-in-out infinite;
+  }
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    70% {
+      transform: translate(10%,0);
+    }
+    80%{
+        transform: translate(10%,0);
+    }
+}

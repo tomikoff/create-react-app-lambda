@@ -1,0 +1,45 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+}
+
+/*-------------CONNECT -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    margin-top: 4.5em;
+    cursor:default;
+    min-height: 92.56965944272446vh;
+}
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+@media  only screen and (max-width:650px) {
+    .TextDiv {
+        flex-direction: column;}
+        .Text {
+            font-size: 18px;}
+    
+}

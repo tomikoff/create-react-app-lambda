@@ -1,0 +1,148 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    scroll-behavior: smooth;
+}
+
+/*-------------MAIN PAGE -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+    background-image: url("../assets/background/dark_2.jpg");
+    /*
+    background-blend-mode: overlay;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    box-shadow: 12px 18px 15px 28px black;*/
+}
+.LoadingDiv{
+    min-height: calc(100vh - 4.5em);
+    width: 100vw;
+    height: 134.25vh;
+    background-color: black;
+    z-index: 55;
+    opacity: 0.6;
+    position: absolute;
+}
+.Ldiv{
+    opacity: 1;
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    min-height: calc(100vh - 4.5em);
+    height: 100%;
+    align-items: center;
+
+}
+.hh{
+    opacity: 1;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+text-align: center;
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 35px;
+    padding: 1em;
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+}
+
+.TextLeft{
+    text-align: center;
+    font-family: Space;
+    font-size: 23px;
+    
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.TextDivIntro{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.ImgDiv{
+    border-radius: 50%;
+    height: 17em;
+    margin-top: 1em;
+}
+
+.Img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.imagew{
+    max-height: 500px;
+}
+.NFTdiv{
+    max-width: 80%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    justify-content: center;
+    display: flex;
+}
+/*------------------- Minting -----------------------------*/
+
+.MintDiv{
+    width: 100%;
+    height: auto;
+}
+.Arrow{
+    background-image: url("../assets/Arrows.png");
+    display: block;
+      margin: auto;
+      height: 3.125em;
+      width: 2.625em;
+      opacity: 1;
+    animation: slide1 1s ease-in-out infinite;
+  }
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0, 2em);
+    }
+}

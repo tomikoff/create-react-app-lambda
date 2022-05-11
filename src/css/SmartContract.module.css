@@ -1,0 +1,94 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    
+    --canvadark : #04345c;
+    --canvalight : #6bd4cd;
+    --canva : #52d1c9;
+}
+
+/*-------------SMART CONTRACT PAGE -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+    
+    background-image: url("../assets/background/light_1.jpg");background-blend-mode: screen;
+    background-size: cover;
+    box-shadow: 12px 18px 15px 28px black;
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 30px;
+    color: var(--canvalight);
+    mix-blend-mode: difference;
+    
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 20px;
+}
+
+.TextDiv{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+.ContractDiv{
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+    background-color: var(--canvadark);
+    padding-bottom: 0.25em;
+}
+.ContractTitle{
+    width: 7em;
+    position: relative;
+    left: 0.5em;
+    top: 0.5em;
+    height: 2em;
+    background-color: var(--canvalight);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.CodeDiv{
+    background-image: url("../assets/Contract.png");
+    background-position: left; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+
+
+
+    position: relative;
+    width: 96%;
+    height: 23em;
+    background-color: #1e1e1e;
+    margin-top: 1em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2em;
+    border-radius: 3px;
+    /*to do : upravit text overflow*/
+    text-overflow: initial;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}

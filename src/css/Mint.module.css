@@ -1,0 +1,72 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    scroll-behavior: smooth;
+}
+
+/*-------------MINT -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+
+    background-image: url("../assets/background/dark_3.jpg");
+    background-blend-mode: exclusion;
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 35px;
+    padding: 1em;
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+}
+.PreviewDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    row-gap: 10px;
+
+    border-radius: 10px;
+    background-color: var(--canvalight);
+    
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+img:nth-child(4) {
+    flex-basis: 100%;
+}
+.Img{
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    
+}

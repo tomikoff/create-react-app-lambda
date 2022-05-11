@@ -1,0 +1,175 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    scroll-behavior: smooth;
+
+    --canvadark : #04345c;
+    --canvalight : #6bd4cd;
+}
+
+/*------------- DONATIONS -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    background-image: url("../assets/background/dark_3.jpg");
+    
+
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 35px;
+    padding: 1em;
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*----------------- organization css- ------------*/
+
+.OrganizationDivLEFT{
+    background-color: var(--canvalight);
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+
+.OrganizationTextDiv{
+    width: 70%;
+    
+}
+.OrganizationTextTitleLeft{
+    color: var(--canvadark);
+    text-align: center;
+    font-family: Space;
+    font-size: 30px;
+
+}
+.OrganizationText{
+    text-align: center;
+    font-family: Space;
+    color: var(--canvadark);
+    font-size: 23px;
+    margin-top: 1em;
+}
+
+.OrganizationImg{
+    
+    margin: auto; 
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.OrganizationDivRIGHT{
+    background-color: var(--canvalight);
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    display: flex;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+
+.OrganizationTextTitleRight{
+    color: var(--canvadark);
+    text-align: center;
+    font-family: Space;
+    font-size: 30px;
+}
+
+.OrganizationContactDiv{
+    width: 100%;
+    margin-top: 1.25em;
+    background-color: var(--canvadark);
+    border-radius: 10px;
+    padding-bottom: 1em;
+    margin-bottom: 0.25em;
+}
+.OrganizationContactText{
+    text-align: center;
+    font-family: Space;
+    font-size: 23px;
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.OrganizationContactText :hover{
+    color: var(--canvalight);
+}
+.Img{
+    width: auto;
+}
+
+.firstOrg{
+
+}
+
+.secondOrg{
+
+}
+.thirdOrg{
+
+}
+.fourthOrg{
+
+}
+@media  only screen and (max-width:1060px) {
+    .OrganizationDivLEFT , .OrganizationDivRIGHT{
+        flex-direction: column;
+    }
+    .OrganizationTextDiv, .OrganizationContactDiv{
+        width: 100%;
+        
+    }
+    .OrganizationImg{
+        margin: auto;  
+        width: 30%;
+    }
+    .OrganizationTextTitleRight, .OrganizationTextTitleLeft{
+        text-align: center;
+    }
+}
+@media only screen and (min-width:1925px) {
+    .Page{
+    background-blend-mode: overlay;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+
+    box-shadow: 12px 18px 15px 28px black;
+    }
+}

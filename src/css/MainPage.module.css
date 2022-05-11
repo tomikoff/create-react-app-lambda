@@ -1,0 +1,194 @@
+/*-------------------------- DECLARATIONS ---------------------------*/
+
+@font-face {
+    font-family: Space;
+    src: local('Space'), url(../font/GameSpaceAcademy.otf) format('opentype');
+  }
+  
+
+:root{
+    --Basecolor : #301934;
+    --BaseTextcolor : #d8d8d8;
+    --BasecolorHover : #220b25;
+    --BaseTextcolorHover : gold;
+    --BasecolorPage : #200e53;
+    scroll-behavior: smooth;
+}
+
+/*-------------MAIN PAGE -------------------- */
+
+.Page{
+    background-color: var(--BasecolorPage);
+    color: var(--BaseTextcolor);
+    margin-top: 4.5em;
+    cursor:default;
+    /*min-height: 92.56965944272446vh;*/
+    min-height: calc(100vh - 4.5em);
+    background-image: url("../assets/background/dark_2.jpg");
+    /*
+    background-blend-mode: overlay;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+
+    box-shadow: 12px 18px 15px 28px black;*/
+}
+
+.Title{
+    text-align: center;
+    font-family: Space;
+    font-size: 35px;
+    padding: 1em;
+}
+
+.Text{
+    text-align: center;
+    font-family: Space;
+    font-size: 24px;
+}
+
+.TextLeft{
+    text-align: center;
+    font-family: Space;
+    font-size: 23px;
+    
+}
+
+.TextDiv{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.TextDivIntro{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.ImgDiv{
+    border-radius: 50%;
+    height: 17em;
+    margin-top: 1em;
+}
+
+.Img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*------------------- Minting -----------------------------*/
+
+.MintDiv{
+    width: 100%;
+    height: auto;
+}
+.Arrow{
+    background-image: url("../assets/Arrows.png");
+    display: block;
+      margin: auto;
+      height: 3.125em;
+      width: 2.625em;
+      opacity: 1;
+    animation: slide1 1s ease-in-out infinite;
+  }
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(0, 2em);
+    }
+}
+
+/*------------------------- LEARN MORE----------------------- /*/
+.LearnDiv{
+    width: 100%;
+    height: auto;
+}
+
+/*------------------------- Team----------------------- /*/
+.TeamDiv{
+    width: 100%;
+    height: auto;
+}
+
+/*------------------------- DONATIONS----------------------- /*/
+.DonationsDiv{
+    width: 100%;
+    height: auto;
+}
+
+.Socials{
+    display: table;
+    table-layout: fixed;
+    margin-left: 43.5%; /*stred obrazovky 40.3% a stred textu 41.25 až 41.75%*/
+
+    
+}
+.SocSietVIDtwi
+{
+  display: table-cell; height: 3.75em; width: 3.75em; padding: 1em; background-image: url("../assets/socialnesiete/Twitter_icon.png"); background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50px 50px; cursor: pointer;
+}
+.SocSietVIDtwi:hover
+{
+  background-image: url("../assets/socialnesiete/Twitter_icon_hower.png");
+  transform: scale(1.1);
+}
+.SocSietVIDing
+{
+  display: table-cell; height: 3.75em; width: 3.75em; padding: 1em; background-image: url("../assets/socialnesiete/instagram_icon.png"); background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50px 50px;cursor: pointer;
+}
+.SocSietVIDing:hover
+{
+  background-image: url("../assets/socialnesiete/instagram_icon_hower.png");
+  transform: scale(1.1);
+}
+.SocSietVIDfac
+{
+  display: table-cell; height: 3.75em; width: 3.75em; padding: 1em; background-image: url("../assets/socialnesiete/facebook_icon.png"); background-position: center;
+                background-repeat: no-repeat;
+                background-size: 50px 50px;cursor: pointer;
+}
+.SocSietVIDfac:hover
+{
+  background-image: url("../assets/socialnesiete/facebook_icon_hower.png");
+  transform: scale(1.1);
+}
+/*------------------------- media queries---------------------------/*/
+
+@media only screen and (min-width: 661px) {
+    
+}
+@media only screen and (max-width: 660px) {
+    
+    .TextLeft{
+        width: 95%;
+        max-width: 100%;
+        margin: 2.5%;
+    }
+}
+@media  only screen and (max-width:1060px) {
+    .TextDivIntro{
+        display: inline;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+    .ImgDiv{
+        width: 10em;
+        height: 10em;
+        margin: auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}
